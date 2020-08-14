@@ -1,0 +1,400 @@
+.img {
+    display: 'block';
+    float: 'left';
+    margin-left: 5%;
+    margin-right: 5%;
+    height: '30vh'
+}
+.about {
+    display: 'block';
+    float: 'left';
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: '22%';
+    background-color: rgba(194, 155, 255, 0.7);
+}
+.container {
+    position: relative;
+    width: 50%;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(25, 25, 25, 0.7);
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: black;
+    font-size: 150%;
+    position: absolute;
+    top: 60%;
+    left: 57%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+
+  .bttn-default {
+    color: #fff;
+  }
+  .bttn-primary,
+  .bttn,
+  .bttn-lg,
+  .bttn-md,
+  .bttn-sm,
+  .bttn-xs {
+    color: black;
+  }
+  .bttn-warning {
+    color: #feab3a;
+  }
+  .bttn-danger {
+    color: #ff5964;
+  }
+  .bttn-success {
+    color: #28b78d;
+  }
+  .bttn-royal {
+    color: #bd2df5;
+  }
+  .bttn,
+  .bttn-lg,
+  .bttn-md,
+  .bttn-sm,
+  .bttn-xs {
+    margin: 0;
+    padding: 0;
+    border-width: 0;
+    border-color: transparent;
+    background: transparent;
+    font-weight: 400;
+    cursor: pointer;
+    position: relative;
+  }
+  .bttn-lg {
+    padding: 8px 15px;
+    font-size: 24px;
+    font-family: inherit;
+  }
+  .bttn-md {
+    font-size: 20px;
+    font-family: inherit;
+    padding: 5px 12px;
+  }
+  .bttn-sm {
+    padding: 1% 1%;
+    font-size: 100%;
+    font-family: inherit;
+  }
+  .bttn-xs {
+    padding: 3px 8px;
+    font-size: 12px;
+    font-family: inherit;
+  }
+  .bttn-stretch {
+    margin: 0;
+    padding: 0;
+    border-width: 0;
+    border-color: transparent;
+    background: transparent;
+    font-weight: 400;
+    cursor: pointer;
+    position: relative;
+    font-size: 20px;
+    font-family: inherit;
+    padding: 5px 12px;
+    overflow: hidden;
+    border-width: 0;
+    border-radius: 0;
+    background: transparent;
+    color: #fff;
+    letter-spacing: 0;
+    -webkit-transition: all 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
+    transition: all 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
+  }
+  .bttn-stretch:after,
+  .bttn-stretch:before {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: currentColor;
+    content: '';
+    opacity: 0.65;
+    -webkit-transition: all 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
+    transition: all 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  .bttn-stretch:after {
+    top: 0;
+  }
+  .bttn-stretch:before {
+    bottom: 0;
+  }
+  .bttn-stretch:hover,
+  .bttn-stretch:focus {
+    letter-spacing: 2px;
+    opacity: 0.9;
+    -webkit-transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+    transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+  }
+  .bttn-stretch:hover:after,
+  .bttn-stretch:focus:after {
+    opacity: 1;
+    -webkit-transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+    transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  .bttn-stretch:hover:before,
+  .bttn-stretch:focus:before {
+    opacity: 1;
+    -webkit-transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+    transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  .bttn-stretch.bttn-xs {
+    padding: 3px 8px;
+    font-size: 12px;
+    font-family: inherit;
+  }
+  .bttn-stretch.bttn-sm {
+    padding: .1% .1%;
+    font-size: 90%;
+    font-family: inherit;
+  }
+  .bttn-stretch.bttn-md {
+    font-size: 100%;
+    font-family: inherit;
+    padding: 1% 1%;
+  }
+  .bttn-stretch.bttn-lg {
+    padding: 8px 15px;
+    font-size: 24px;
+    font-family: inherit;
+  }
+  .bttn-stretch.bttn-default {
+    color: #fff;
+  }
+  .bttn-stretch.bttn-primary {
+    color: black;
+  }
+ 
+
+  .sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+
+  body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  /* Bar Graph Horizontal */
+  .bar-graph .year {
+    -webkit-animation: fade-in-text 2.2s 0.1s forwards;
+    -moz-animation: fade-in-text 2.2s 0.1s forwards;
+    animation: fade-in-text 2.2s 0.1s forwards;
+    opacity: 0;
+  }
+  
+  .bar-graph-horizontal {
+    max-width: 380px;
+  }
+  
+  .bar-graph-horizontal > div {
+    float: left;
+    margin-bottom: 8px;
+    width: 100%;
+  }
+  
+  .bar-graph-horizontal .year {
+    float: left;
+    margin-top: 18px;
+    width: 23%;
+  }
+  
+  .bar-graph-horizontal .bar {
+    border-radius: 3px;
+    height: 66px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    width: 0;
+  }
+  
+  .bar-graph-one .bar::after {
+    -webkit-animation: fade-in-text 2.2s 0.1s forwards;
+    -moz-animation: fade-in-text 2.2s 0.1s forwards;
+    animation: fade-in-text 2.2s 0.1s forwards;
+    color: #fff;
+    content: attr(data-percentage);
+    font-weight: 700;
+    position: absolute;
+    right: 16px;
+    top: 17px;
+  }
+  
+  .bar-graph-one .bar-one .bar {
+    background-color: #cc92c2;
+    -webkit-animation: show-bar-one 1.2s 0.1s forwards;
+    -moz-animation: show-bar-one 1.2s 0.1s forwards;
+    animation: show-bar-one 1.2s 0.1s forwards;
+  }
+  
+  .bar-graph-one .bar-two .bar {
+    background-color: #dba8ac;
+    -webkit-animation: show-bar-two 1.2s 0.2s forwards;
+    -moz-animation: show-bar-two 1.2s 0.2s forwards;
+    animation: show-bar-two 1.2s 0.2s forwards;
+  }
+  
+  .bar-graph-one .bar-three .bar {
+    background-color: #cc92c2;
+    -webkit-animation: show-bar-two 1.2s 0.2s forwards;
+    -moz-animation: show-bar-two 1.2s 0.2s forwards;
+    animation: show-bar-two 1.2s 0.2s forwards;
+  }
+  
+  .bar-graph-one .bar-four .bar {
+    background-color: #aa7bc3;
+    -webkit-animation: show-bar-three 1.2s 0.3s forwards;
+    -moz-animation: show-bar-three 1.2s 0.3s forwards;
+    animation: show-bar-three 1.2s 0.3s forwards;
+  }
+  
+  .bar-graph-one .bar-five .bar {
+    background-color: #944bbb;
+    -webkit-animation: show-bar-four 1.2s 0.4s forwards;
+    -moz-animation: show-bar-four 1.2s 0.4s forwards;
+    animation: show-bar-four 1.2s 0.4s forwards;
+  }
+  .bar-graph-one .bar-six .bar {
+    background-color: #944bbb;
+    -webkit-animation: show-bar-four 1.2s 0.4s forwards;
+    -moz-animation: show-bar-four 1.2s 0.4s forwards;
+    animation: show-bar-four 1.2s 0.5s forwards;
+  }
+  /* Bar Graph Horizontal Animations */
+  @keyframes show-bar-one {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 75%;
+    }
+  }
+  
+  @keyframes show-bar-two {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 70%;
+    }
+  }
+  
+  @keyframes show-bar-three {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 60%;
+    }
+  }
+  
+   @keyframes show-bar-four {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 48%;
+    }
+  }
+  @keyframes show-bar-five {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 76.8%;
+    }
+  }
+  @keyframes show-bar-six {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 76.8%;
+    }
+  }
+  
+  @keyframes fade-in-text {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
