@@ -50,6 +50,25 @@ const About = (props) => {
       props.handleTransition()
     }
 
+    const resumeTransition = () => {
+      props.setResume(true)
+    }
+
+    const stateChange2 = () => {
+      resumeTransition()
+      console.log(props.resume)
+      props.handleTransition()
+    }
+
+    const contactTransition = () => {
+      props.setContact(true)
+    }
+
+    const stateChange3 = () => {
+      contactTransition()
+      props.handleTransition()
+    }
+
     const flexStyles = {
         display: 'block',
         float: 'left',
@@ -109,36 +128,36 @@ const About = (props) => {
                 intend to use this to absorb as much information as I can, and one day become a senior
                 Web Developer.</h3>
             <div style={divStyles} >
-                <div class="container" >
+                <div className="container" >
                   <Grow in={props.about} {...(props.about ? { timeout: 2000 } : {})} >
                      <a href="#applications"><img src={Apps} style={iconStyles} onClick={stateChange} /></a>
                     </Grow>
-                  <div class="overlay">
-                    <div class="text">View my projects</div>
+                  <div className="overlay">
+                    <div className="text">View my projects</div>
                   </div>
                 </div>
-                <div class="container">
+                <div className="container">
                   <Grow in={props.about} {...(props.about ? { timeout: 3000 } : {})}  >
-                    <a href='#my_resume'><img src={Resume} style={iconStyles} /></a>
+                    <a href='#my_resume'><img src={Resume} style={iconStyles} onClick={stateChange2}/></a>
                   </Grow>
-                <div class="overlay">
-                  <div class="text">View my resume</div>
+                <div className="overlay">
+                  <div className="text">View my resume</div>
                 </div>
               </div>
-              <div class="container">
+              <div className="container">
                     <Grow in={props.about} {...(props.about ? { timeout: 4000 } : {})}  href='#my_skills'>
                     <a href='#my_skills'><img src={Skills} style={iconStyles} onClick={stateChange1}/></a>
                     </Grow>
-              <div class="overlay">
-                <div class="text">View my skills</div>
+              <div className="overlay">
+                <div className="text">View my skills</div>
               </div>
             </div>
-            <div class="container">
+            <div className="container">
               <Grow in={props.about} {...(props.about ? { timeout: 5000 } : {})}  href='#contact_me'>
-                 <img src={Contact} style={iconStyles}/>
+                <a href='#contact_me'><img src={Contact} style={iconStyles} onClick={stateChange3}/></a>
               </Grow> 
-            <div class="overlay">
-              <div class="text">Contact me</div>
+            <div className="overlay">
+              <div className="text">Contact me</div>
             </div>
           </div>
       </div>         

@@ -48,18 +48,37 @@ const Navigation = (props) => {
         console.log(props.about)
         props.handleTransition()
     }
+    const resumeTransition = () => {
+        props.setResume(true)
+      }
+  
+      const stateChange2 = () => {
+        resumeTransition()
+        console.log(props.resume)
+        props.handleTransition()
+      }
+  
+      const contactTransition = () => {
+        props.setContact(true)
+      }
+  
+      const stateChange3 = () => {
+        contactTransition()
+        console.log(props.contact)
+        props.handleTransition()
+      }
 
     return(
         <div>
-            <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onClick={closeNav}>&times;</a>
+            <div id="mySidenav" className="sidenav">
+            <a href="javascript:void(0)" className="closebtn" onClick={closeNav}>&times;</a>
             <a href="#about_me" onClick={stateChangeAbout}>About</a>
             <a href="#applications" onClick={stateChangeApps}>Apps</a>
             <a href="#my_skills" onClick={stateChangeSkills}>Skills</a>
-            <a href="#my_resume" onClick={props.setResume(true) && props.handleTransition}>Resume</a>
-            <a href="#contact_me" onClick={props.setContact(true) && props.handleTransition}>Contact</a>
+            <a href="#my_resume" onClick={stateChange2}>Resume</a>
+            <a href="#contact_me" onClick={stateChange3}>Contact</a>
             </div>
-            <button class="bttn-stretch bttn-sm bttn-primary" onClick={openNav} style={navStyles}>...</button>
+            <button className="bttn-stretch bttn-sm bttn-primary" onClick={openNav} style={navStyles}>...</button>
         </div>
     )
 }

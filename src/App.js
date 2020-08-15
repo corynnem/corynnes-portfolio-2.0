@@ -35,10 +35,10 @@ function App() {
   } else if(skills === true) {
     setChecked(true)
     handleChange()
-  } else if(contact === true) {
+  } else if(resume === true) {
     setChecked(true)
     handleChange()
-  } else if(resume === true) {
+  } else if(contact === true) {
     setChecked(true)
     handleChange()
   } else if(welcome === true) {
@@ -57,14 +57,15 @@ function App() {
   return (
     <div className="App">
         <Grow in={apps}>
-          <Navigation handleTransition={handleTransition} about={about} setAbout={setAbout} about={about} setApps={setApps} apps={apps} 
+          <Navigation handleTransition={handleTransition} about={about} setAbout={setAbout} setApps={setApps} apps={apps} 
           skills={skills} setSkills={setSkills} resume={resume} setResume={setResume} contact={contact} setContact={setContact}/>
         </Grow>
         <div style={fullscreenStyles} >
           <Welcome handleTransition={handleTransition} about={about} setAbout={setAbout}/>
         </div>
         <div style={fullscreenStyles} >
-          <About handleTransition={handleTransition} about={about} apps={apps} setApps={setApps} setSkills={setSkills}/>
+          <About handleTransition={handleTransition} about={about} apps={apps} setApps={setApps} setSkills={setSkills} resume={resume} 
+          setResume={setResume} setContact={setContact}/>
         </div>
         <div style={fullscreenStyles} >
           <Apps handleTransition={handleTransition} apps={apps} setApps={setApps}/>
@@ -73,10 +74,10 @@ function App() {
           <Skills handleTransition={handleTransition} skills={skills} setSkills={setSkills}/>
         </div>
         <div style={fullscreenStyles} >
-          <Resume handleTransition={handleTransition}/>
+          <Resume handleTransition={handleTransition} resume={resume} setResume={setResume}/>
         </div>
         <div style={fullscreenStyles} >
-          <Contact handleTransition={handleTransition}/>
+          <Contact handleTransition={handleTransition} contact={contact} setContact={setContact}/>
         </div>
       </div>
   );

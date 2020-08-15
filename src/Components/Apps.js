@@ -44,7 +44,7 @@ const Apps = (props) => {
     const appStyles = {
         display: 'block',
         float: 'left',
-        marginTop: '1%',
+        // marginTop: '1%',
         marginBottom: '5%',
         marginLeft: '10%',
         
@@ -62,9 +62,6 @@ const Apps = (props) => {
             <div>
                 
                 <Grow in={props.apps}><h1 style={{fontSize: '5vh'}}>Applications</h1></Grow>
-                <Grow in={props.about}  style={{ transformOrigin: '0 0 0' }}>
-                <h1 style={{fontSize: '200%'}}>Applications</h1>
-                    </Grow>
                 {/* cheerios mcgoobikinz */}
                 <Grow in={props.apps}  style={{ transformOrigin: '0 0 0' }}
                     {...(props.apps ? { timeout: 1000 } : {})}>

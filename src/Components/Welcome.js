@@ -41,7 +41,7 @@ const Welcome = (props) => {
             </div>
             <div> 
             
-           <a href='#about_me'><button class="bttn-stretch bttn-md bttn-primary" onClick={stateChange} style={{fontWeight: 'bold'}}>Get to know me</button></a>
+           <a href='#about_me'><button className="bttn-stretch bttn-md bttn-primary" onClick={stateChange} style={{fontWeight: 'bold'}}>Get to know me</button></a>
             </div>
         </div>
     )
