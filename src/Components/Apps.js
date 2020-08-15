@@ -44,11 +44,8 @@ const Apps = (props) => {
     const appStyles = {
         display: 'block',
         float: 'left',
-        // marginTop: '1%',
         marginBottom: '5%',
         marginLeft: '10%',
-        
-        
     }
     
     const cardStyles = {
@@ -85,7 +82,7 @@ const Apps = (props) => {
                                     </CardContent>
                                 </CardActionArea>
                                 <CardActions>
-                                    <Button size="small" color="primary" href='https://codepen.io/corynnemm/pen/WNvoEWN'>
+                                    <Button size="small" color="primary" href='https://codepen.io/corynnemm/pen/WNvoEWN' target='_blank'>
                                     View Codepen
                                     </Button>
                                 </CardActions>
@@ -116,7 +113,7 @@ const Apps = (props) => {
                                     </CardContent>
                                 </CardActionArea>
                                 <CardActions>
-                                    <Button size="small" color="primary" href='https://mandys-app.herokuapp.com/'>
+                                    <Button size="small" color="primary" href='https://mandys-app.herokuapp.com/' target='_blank'>
                                     View Deployed Project
                                     </Button>
                                     <Button size="small" color="primary">
@@ -149,7 +146,7 @@ const Apps = (props) => {
                                     </CardContent>
                                 </CardActionArea>
                                 <CardActions>
-                                    <Button size="small" color="primary" href='https://corynnem.github.io/api-project/'>
+                                    <Button size="small" color="primary" href='https://corynnem.github.io/api-project/' target='_blank'>
                                     View Deployed Project
                                     </Button>
                                     <Button size="small" color="primary" href="https://github.com/corynnem/api-project">
@@ -188,7 +185,7 @@ const Apps = (props) => {
                                         <Button size="small" color="primary" href="https://github.com/corynnem/portfolio/settings">
                                         View Deployed Project
                                         </Button>
-                                        <Button size="small" color="primary" href='https://github.com/corynnem/portfolio'>
+                                        <Button size="small" color="primary" href='https://github.com/corynnem/portfolio' target='_blank'>
                                         Visit Repository
                                         </Button>
                                     </CardActions>
@@ -220,7 +217,7 @@ const Apps = (props) => {
                                     </CardContent>
                                 </CardActionArea>
                                 <CardActions>
-                                    <Button size="small" color="primary" href='https://cm-venyou-client.herokuapp.com/'>
+                                    <Button size="small" color="primary" href='https://cm-venyou-client.herokuapp.com/' target='_blank'>
                                     View Deployed Project
                                     </Button>
                                 </CardActions>
@@ -249,7 +246,7 @@ const Apps = (props) => {
                                     </CardContent>
                                 </CardActionArea>
                                 <CardActions>
-                                    <Button size="small" color="primary" href='https://github.com/zlphillips/redBadgeProject'>
+                                    <Button size="small" color="primary" href='https://github.com/zlphillips/redBadgeProject' target='_blank'>
                                     Visit Front end Repository
                                     </Button>
                                     <Button size="small" color="primary">

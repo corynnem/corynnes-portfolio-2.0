@@ -72,29 +72,33 @@ const About = (props) => {
     const flexStyles = {
         display: 'block',
         float: 'left',
-        height: '85vh',
+        height: '90vh',
         width: '40vw',
         borderStyle: 'solid',
         borderColor: 'grey',
         borderRadius: '1%',
         boxShadow: '.1px .1px .1px grey',
-        borderWidth: '.1px'
+        borderWidth: '.1px',
+        marginTop: '-3%'
     }
 
     const photoStyles = {
-        height: '85vh',
+        height: '90vh',
         display: 'block',
         float: 'left',
         borderRadius: '1%',
         marginLeft: '15%',
+        marginTop: '-3%'
     }
 
     const iconStyles = {
         height: '13vh',
         display: 'block',
         float: 'left',
-        marginLeft: '17%',
+        marginRight: '9%',
+        marginLeft:'7%',
         padding: '3%',
+        paddingLeft:'5%'
     }
     
     const divStyles = {
@@ -154,7 +158,7 @@ const About = (props) => {
             </div>
             <div className="container">
               <Grow in={props.about} {...(props.about ? { timeout: 5000 } : {})}  href='#contact_me'>
-                <a href='#contact_me'><img src={Contact} style={iconStyles} onClick={stateChange3}/></a>
+                <a href='contact_me'><img src={Contact} style={iconStyles} onClick={stateChange3}/></a>
               </Grow> 
             <div className="overlay">
               <div className="text">Contact me</div>

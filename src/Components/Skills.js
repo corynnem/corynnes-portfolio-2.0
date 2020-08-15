@@ -33,17 +33,17 @@ const Skills = (props) => {
                     <div class="bar" data-percentage="Advanced"></div>
                 </div>
                 <div class="tooltip ">
-                <p>Refer to 'Static Layout'</p>
+                <p>Refer to any project above</p>
                 </div>
                 </div>
             
                 <div class="con-tooltip right">
-                <div class="bar-one">
+                <div class="bar-four">
                                 <span class="year">CSS</span>
-                                <div class="bar" data-percentage="Advanced"></div>
+                                <div class="bar" data-percentage="Intermediate"></div>
                             </div>
                 <div class="tooltip ">
-                    <p>Refer to ''</p>
+                    <p>Refer to any project above</p>
                 </div>
                 </div>
 
