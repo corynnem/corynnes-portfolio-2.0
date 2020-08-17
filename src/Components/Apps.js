@@ -57,7 +57,6 @@ const Apps = (props) => {
     return (
         <div id='applications' style={{height: '100vh', width: '100vw'}}>
             <div>
-                
                 <Grow in={props.apps}><h1 style={{fontSize: '5vh'}}>Applications</h1></Grow>
                 {/* cheerios mcgoobikinz */}
                 <Grow in={props.apps}  style={{ transformOrigin: '0 0 0' }}
@@ -72,15 +71,27 @@ const Apps = (props) => {
                                     title="Little orange guy with moving eyes, a mouth, and legs. He's a circle."
                                     />
                                     <CardContent>
+                                    <br>
+                                </br>
+                                <br>
+                                </br>
                                     <Typography gutterBottom variant="h5" component="h2">
                                         CSS Creature
                                     </Typography>
+                                    <br>
+                                </br>
+                                <br>
+                                </br>
                                     <Typography variant="body2" color="textSecondary" component="p">
                                         Using HTML and CSS, I created a fun animation I call 'Cheerios McGoobikinz'.
                                         This is the first 'Project' I completed as a coding student.
                                     </Typography>
                                     </CardContent>
                                 </CardActionArea>
+                                <br>
+                                </br>
+                                <br>
+                                </br>
                                 <CardActions>
                                     <Button size="small" color="primary" href='https://codepen.io/corynnemm/pen/WNvoEWN' target='_blank'>
                                     View Codepen
@@ -102,9 +113,17 @@ const Apps = (props) => {
                                     title="Inspiring quote of the day generator"
                                     />
                                     <CardContent>
+                                    <br>
+                                </br>
+                                <br>
+                                </br>
                                     <Typography gutterBottom variant="h5" component="h2">
                                         Daily Inspirational Quote Generator
                                     </Typography>
+                                <br>
+                                </br>
+                                <br>
+                                </br>
                                     <Typography variant="body2" color="textSecondary" component="p">
                                         I used this project as a little test to see how quickly and efficiently
                                         I could produce a minimum viable product. In approximately 2 hours I built an 
@@ -112,6 +131,11 @@ const Apps = (props) => {
                                     </Typography>
                                     </CardContent>
                                 </CardActionArea>
+                                <br>
+                                </br>
+                                <br>
+                                </br>
+                
                                 <CardActions>
                                     <Button size="small" color="primary" href='https://mandys-app.herokuapp.com/' target='_blank'>
                                     View Deployed Project
@@ -136,15 +160,28 @@ const Apps = (props) => {
                                     title="Contemplative Reptile"
                                     />
                                     <CardContent>
+                                    <br>
+                                </br>
+                                <br>
+                                </br>
                                     <Typography gutterBottom variant="h5" component="h2">
                                         API Project
                                     </Typography>
+                                    <br>
+                                </br>
+                                <br>
+                                </br>
                                     <Typography variant="body2" color="textSecondary" component="p">
                                         A simple interface pulling a photo and small blurb from NASA's APOD API.
                                         It regenerates daily and includes pictures taken only from space
                                     </Typography>
                                     </CardContent>
                                 </CardActionArea>
+                                <br>
+                                </br>
+                                <br>
+                                </br>
+                               
                                 <CardActions>
                                     <Button size="small" color="primary" href='https://corynnem.github.io/api-project/' target='_blank'>
                                     View Deployed Project
@@ -172,16 +209,28 @@ const Apps = (props) => {
                                         title="Contemplative Reptile"
                                         />
                                         <CardContent>
+                                <br>
+                                </br>
+                                <br>
+                                </br>
                                         <Typography gutterBottom variant="h5" component="h2">
                                             Portfolio v1.0
                                         </Typography>
+                                <br>
+                                </br>
+                                <br>
+                                </br>
                                         <Typography variant="body2" color="textSecondary" component="p">
                                             This was my original portfolio, I added it because growth is important.
                                             These are the tangible results of my 6 months of coding education.
                                         </Typography>
                                         </CardContent>
-                                    </CardActionArea>
-                                    <CardActions>
+                                    </CardActionArea> 
+                                <br>
+                                </br>
+                                <br>
+                                </br>
+                                <CardActions>
                                         <Button size="small" color="primary" href="https://github.com/corynnem/portfolio/settings">
                                         View Deployed Project
                                         </Button>
@@ -207,15 +256,27 @@ const Apps = (props) => {
                                     title="Contemplative Reptile"
                                     />
                                     <CardContent>
+                                <br>
+                                </br>
+                                <br>
+                                </br>
                                     <Typography gutterBottom variant="h5" component="h2">
                                         VenYou
                                     </Typography>
+                                <br>
+                                </br>
+                                <br>
+                                </br>
                                     <Typography variant="body2" color="textSecondary" component="p">
                                         This project was made using NodeJs, React, PostgreSQL, and Reactstrap. It is an 
-                                        app for aspiring musicians to find venues to perform at. ;
+                                        app for aspiring musicians to find venues to perform at. 
                                     </Typography>
                                     </CardContent>
                                 </CardActionArea>
+                                <br>
+                                </br>
+                                <br>
+                                </br>
                                 <CardActions>
                                     <Button size="small" color="primary" href='https://cm-venyou-client.herokuapp.com/' target='_blank'>
                                     View Deployed Project
@@ -240,8 +301,11 @@ const Apps = (props) => {
                                         Four oh Four
                                     </Typography>
                                     <Typography variant="body2" color="textSecondary" component="p">
-                                        Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                                        across all continents except Antarctica
+                                        Using NodeJs, React, TypeScript, and many libraries, a group of 2 other students and I made a 
+                                        social media app designed for other coders. I mean we're the ones creating all of this, might 
+                                        as well make something we can enjoy! I was able to implement photo upload, with much help from 
+                                        my teammates, by storing them in PostgreSQL as a binary string and then using a Base64 function
+                                        to decode and encode the strings to and from binary.
                                     </Typography>
                                     </CardContent>
                                 </CardActionArea>

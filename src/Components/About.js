@@ -126,10 +126,10 @@ const About = (props) => {
                 <h1>Hi, Im Corynne.</h1>
                 <h3 style={{padding: '5%'}}>I am 20 years old and currently a learning assistant at 
                 Eleven Fifty Academy. I participated in a 24 week long bootcamp style course and I wanted
-                more practice, I decided the easiest way to do that was teach others! Aside from coding, I 
+                more practice and decided the easiest way to do that was teach others! Aside from coding, I 
                 enjoy playing the Guitar, Drums, and knitting. Starting a career at this age was a little
                 terrifying at first, but it has given me the most important thing when learning, time. I 
-                intend to use this to absorb as much information as I can, and one day become a senior
+                intend to use this to absorb as much information as I can, and one day become a Senior
                 Web Developer.</h3>
             <div style={divStyles} >
                 <div className="container" >

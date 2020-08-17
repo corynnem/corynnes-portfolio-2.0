@@ -62,7 +62,7 @@ const Skills = (props) => {
                                     <div class="bar" data-percentage="Intermediate"></div>
                                 </div>
                         <div class="tooltip ">
-                            <p>Refer to 'VenYou'</p>
+                            <p>Refer to 'VenYou' or 'Four oh Four'</p>
                         </div>
                     </div>
                     <div class="con-tooltip right">
